@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useKeyPressEvent } from 'react-use';
+import headImageSrc from './assets/Head.png';
 
 const box = 20;
 const canvasSize = 400;
+
 
 const Snake: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -29,17 +31,33 @@ const Snake: React.FC = () => {
     setGameOver(false);
   };
 
+
   useEffect(() => {
     if (gameOver) return;
 
     const context = canvasRef.current?.getContext('2d');
+
+    const headImage = new Image();
+    headImage.src = headImageSrc;
+
+    headImage.onerror = () => {
+      console.error('Error loading image');
+    };
+  
+    headImage.onload = () => {
     const interval = setInterval(() => {
       if (!context || !canvasRef.current) return;
 
       context.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
       for (let i = 0; i < snake.current.length; i++) {
-        context.fillStyle = (i === 0) ? 'green' : 'white';
-        context.fillRect(snake.current[i].x, snake.current[i].y, box, box);
+        if (i == 0) {
+          context.drawImage(headImage, snake.current[i].x, snake.current[i].y, box, box);
+        } else {
+          context.fillStyle = "green";
+          context.fillRect(snake.current[i].x, snake.current[i].y, box, box);
+        }
+        //context.fillStyle = (i === 0) ? 'green' : 'white';
+        //context.fillRect(snake.current[i].x, snake.current[i].y, box, box);
 
         //TODO:Should check if snake collides with itself and end game but it ends the game whenever the snake eats
         for (let j = 1; j < snake.current.length; j++) {
@@ -83,9 +101,12 @@ const Snake: React.FC = () => {
 
       snake.current.unshift(newHead);
     }, 100);
+  
 
     return () => clearInterval(interval);
+  }
   }, [gameOver]);
+
 
   return (
     <div style={{ backgroundColor: 'black', width: canvasSize, height: canvasSize, position: 'relative' }}>
