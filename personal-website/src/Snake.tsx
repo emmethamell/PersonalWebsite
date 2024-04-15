@@ -51,7 +51,8 @@ const Snake: React.FC = () => {
       context.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
       for (let i = 0; i < snake.current.length; i++) {
         if (i == 0) {
-          context.drawImage(headImage, snake.current[i].x, snake.current[i].y, box, box);
+          const scale = 2;
+          context.drawImage(headImage, snake.current[i].x, snake.current[i].y, box * scale, box * scale);
         } else {
           context.fillStyle = "green";
           context.fillRect(snake.current[i].x, snake.current[i].y, box, box);
