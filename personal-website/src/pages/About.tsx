@@ -1,5 +1,5 @@
 import React from 'react'
-import Headshot from './Headshot'
+import Headshot from '../components/Headshot'
 
 const About: React.FC = () => {
     return (

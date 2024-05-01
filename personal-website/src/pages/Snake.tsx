@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useKeyPressEvent } from 'react-use';
-import headImageSrc from './assets/Head.png';
+import headImageSrc from '../assets/Head.png';
 
 const box = 20;
 const canvasSize = 400;

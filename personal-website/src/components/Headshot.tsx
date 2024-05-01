@@ -1,5 +1,5 @@
 import React from 'react'
-import image from './assets/headshot.png'
+import image from '../assets/headshot.png'
 
 const Headshot: React.FC = () => {
     return (

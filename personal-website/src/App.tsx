@@ -1,12 +1,12 @@
 import './App.css'
 //import Dropdown from './Dropdown'
-import SocialIcons from './SocialIcons'
-import Navbar from './Navbar'
-import About from './About'; 
-import Projects from './Projects';
-import Resume from './Resume';
-import Home from './Home'
-import Snake from './Snake'
+import SocialIcons from './components/SocialIcons'
+import Navbar from './components/Navbar'
+import About from './pages/About'; 
+import Projects from './pages/Projects';
+import Resume from './pages/Resume';
+import Home from './pages/Home'
+import Snake from './pages/Snake'
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -18,12 +18,9 @@ function App() {
         <div className="text-xl font-serif">
           <Navbar />
         </div>
-          <div className="fixed top-0 right-0 p-5">
-            <SocialIcons />
-          </div>
       </div>
       <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/resume" element={<Resume />} />
