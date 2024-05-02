@@ -110,13 +110,15 @@ const Snake: React.FC = () => {
 
 
   return (
-    <div style={{ backgroundColor: 'black', width: canvasSize, height: canvasSize, position: 'relative' }}>
-      <canvas ref={canvasRef} width={canvasSize} height={canvasSize} />
+    <div className="z-0">
+    <div style={{ backgroundColor: 'black', width: canvasSize, height: canvasSize, zIndex: 1, position: 'relative' }}>
+      <canvas ref={canvasRef} style={{ zIndex: 1 }} width={canvasSize} height={canvasSize} />
       {gameOver && (
-        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+        <div style={{ zIndex: 1, position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
           <button onClick={resetGame} style={{ fontSize: '20px' }}>Play Again</button>
         </div>
       )}
+    </div>
     </div>
   );
 }

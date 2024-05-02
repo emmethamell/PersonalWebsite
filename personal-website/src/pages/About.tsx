@@ -14,8 +14,7 @@ const About: React.FC = () => {
             </div>
             <div>
             <p className="text-xl max-w-md mx-auto font-serif">
-                Hello! my name is Emmet Hamell. I'm currently a student at UMass Amherst studying Computer Science with a Minor in Economics.
-                I love building software and I'm most interested in AI, design patterns, and program correctness. 
+                Hello! my name is Emmet Hamell. I'm currently a student at UMass Amherst studying Computer Science with a Minor in Economics. I love to build software.
             </p>
             </div>  
         </div>

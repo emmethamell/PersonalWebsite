@@ -12,7 +12,11 @@ export default {
       'display': ['Oswald'],
       'body': ['"Open Sans"'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'custom-blue': '#535bf2'
+      }
+    },
   },
   plugins: [],
 }

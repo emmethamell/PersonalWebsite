@@ -7,8 +7,8 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 right-0 flex justify-center px-15 py-5 text-white items-center">
-      <div className="flex space-x-4 md:hidden">
+    <div className="bg-black z-999 fixed top-0 left-0 right-0 flex justify-center px-15 py-5 text-white items-center">
+      <div className="z-999 flex space-x-4 md:hidden">
         <Dropdown />
       </div>
       <div className={"flex space-x-4 hidden md:flex"}>

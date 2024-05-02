@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <div className="fixed top-0 left-0 right-0 flex justify-center px-15 py-5 text-white items-center">
-        <div className="text-xl font-serif">
+        <div className="text-xl font-serif z-999">
           <Navbar />
         </div>
       </div>
