@@ -1,5 +1,6 @@
-import React from 'react'
-import Headshot from '../components/Headshot'
+import React from "react";
+import Headshot from "../components/Headshot";
+import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
     return (
@@ -14,7 +15,9 @@ const About: React.FC = () => {
             </div>
             <div>
             <p className="text-xl max-w-md mx-auto font-serif">
-                Hello! my name is Emmet Hamell. I'm currently a student at UMass Amherst studying Computer Science with a Minor in Economics. I love to build software.
+                Hi, I'm Emmet! I'm a computer science undergraduate student at UMass Amherst. I'm passionate about computer science and software engineering.
+                You can learn more about my experience on my <Link to="/resume">resume</Link>, or check out some of my <Link to="/projects">projects</Link>.
+                Please feel free to reach out to me at <a href="mailto:emmethamell@yahoo.com">emmethamell@yahoo.com</a> if you have any questions or would like to chat!
             </p>
             </div>  
         </div>

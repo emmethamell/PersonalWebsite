@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
         description="DentalRank is a web-app aimed at helping prospective dental students easily compare and rank dental schools based on criteria important to them rather than arbitrary standards seen with many other sites. The front-end is built with React and the back-end was built using Node.js, Express, and MongoDB"
         subDescription="made with swift, node, swiftUI"
         imageUrl={DentalRankPhoto}
-        githubUrl="https://github.com/emmethamell/LunchLink"
+        githubUrl="https://github.com/emmethamell/DentalRank"
         websiteUrl=""
         index={1}
       />
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
         description="StudySpace is an app I worked on with a team of 8 with the goal of helping UMass students find places to study. My role involved building a server for the front-end to query regarding room availabilities. Server was built with Node.js and Express, with mongoDB as the database. Data parsing was done with regular expressions and Javasript xlsx library. "
         subDescription="made with swift, node, swiftUI"
         imageUrl={StudySpacePhoto}
-        githubUrl="https://github.com/emmethamell/LunchLink"
+        githubUrl="https://github.com/emmethamell/BlockMap"
         websiteUrl=""
         index={2}
       />
@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
         description="Kapok is the most recent project I have been working on with a team of 8. We are building the app for the National Center of Technology and Dispute Resolution to serve as a disaster response app."
         subDescription="made with swift, node, swiftUI"
         imageUrl="https://via.placeholder.com/320x150" 
-        githubUrl="https://github.com/emmethamell/LunchLink"
+        githubUrl="https://github.com/ewu2023/BUILD-Kapok"
         websiteUrl=""
         index={3}
       />
