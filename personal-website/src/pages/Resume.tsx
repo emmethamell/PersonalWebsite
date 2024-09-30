@@ -1,5 +1,5 @@
 import React from "react";
-import ResumePDF from "../../public/my_resume_website.pdf";
+import ResumePDF from "../../public/Emmet_Hamell_Resume.pdf";
 
 const Resume: React.FC = () => {
     return (

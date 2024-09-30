@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import SocialIcons from './SocialIcons';
@@ -16,7 +18,6 @@ const Navbar: React.FC = () => {
         <Link to="/about" className="text-white text-2xl">About</Link>
         <Link to="/projects" className="text-white text-2xl">Projects</Link>
         <Link to="/resume" className="text-white text-2xl">Resume</Link>
-        <Link to="/snake" className="text-white text-2xl">Game</Link>
       </div>
       <div className="fixed top-0 right-0 p-5">
         <SocialIcons />
