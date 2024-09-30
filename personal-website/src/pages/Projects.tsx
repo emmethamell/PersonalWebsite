@@ -42,8 +42,8 @@ const Projects: React.FC = () => {
         description="StudySpace is an app I worked on with a team of 8 with the goal of helping UMass students find places to study. My role involved building a server for the front-end to query regarding room availabilities. Server was built with Node.js and Express, with mongoDB as the database. Data parsing was done with regular expressions and Javasript xlsx library. "
         subDescription="made with swift, node, swiftUI"
         imageUrl={StudySpacePhoto}
-        githubUrl="https://github.com/emmethamell/BlockMap"
-        websiteUrl=""
+        githubUrl="https://blockmap-playground.netlify.app/"
+        websiteUrl="https://github.com/emmethamell/BlockMap"
         index={2}
       />
       <ProjectCard
