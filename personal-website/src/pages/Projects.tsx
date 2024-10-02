@@ -16,7 +16,8 @@ const Projects: React.FC = () => {
       <div className="grid grid-cols-1 gap-4">
       <ProjectCard
         title="LunchLink"
-        button1="Github Repository"
+       //button1=
+        button2="Github Repository"
         description="LunchLink is a native iOS app I built written mostly in Swift, using SwiftUI as the frontend framework. On the backend I use Firebase as well as Node.js and Express. The goal of the app is to let your friends know when you are free and looking to do something, essentially a bat signal to let your friends know you are free and looking to do something, whether it be to get lunch, grab a coffee, see a movie, and more!"
         subDescription="made with swift, node, swiftUI"
         imageUrl={LunchLinkMockups}
@@ -42,8 +43,8 @@ const Projects: React.FC = () => {
         description="StudySpace is an app I worked on with a team of 8 with the goal of helping UMass students find places to study. My role involved building a server for the front-end to query regarding room availabilities. Server was built with Node.js and Express, with mongoDB as the database. Data parsing was done with regular expressions and Javasript xlsx library. "
         subDescription="made with swift, node, swiftUI"
         imageUrl={StudySpacePhoto}
-        githubUrl="https://blockmap-playground.netlify.app/"
-        websiteUrl="https://github.com/emmethamell/BlockMap"
+        githubUrl="https://github.com/emmethamell/BlockMap"
+        websiteUrl="https://blockmap-playground.netlify.app/"
         index={2}
       />
       <ProjectCard

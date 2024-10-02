@@ -26,12 +26,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, button1, button2, desc
       <p className="text-gray-700 text-base">{description}</p>
       <div className="flex items-center justify-center mt-4">
         {button1 && (
-                  <a href={githubUrl} target="_blank" rel="noreferrer" className="inline-block bg-custom-blue text-white rounded-full px-3 py-1 mr-4 custom-hover">
+                  <a href={websiteUrl} target="_blank" rel="noreferrer" className="inline-block bg-custom-blue text-white rounded-full px-3 py-1 mr-4 custom-hover">
                   <h4>{button1}</h4>
                 </a>
         )}
         {button2 && (
-                  <a href={websiteUrl} target="_blank" rel="noreferrer" className="inline-block bg-black text-white rounded-full px-3 py-1 mr-4">
+                  <a href={githubUrl} target="_blank" rel="noreferrer" className="inline-block bg-black text-white rounded-full px-3 py-1 mr-4">
                   <h4>{button2}</h4>
                 </a>
         )}
